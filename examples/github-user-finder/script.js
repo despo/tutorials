@@ -10,7 +10,7 @@ function showUser(user) {
   $('#profile .avatar').show();
   $('#profile h2').html(user.login + " is GitHub user #" + user.id);
   $('#profile .information').html("<a class='profile' href='"+user.html_url+"'> Go to "+ user.name+"'s profile</a>");
-  $('#profile .avatar').html("<img src=https://gravatar.com/avatar/"+ user.gravatar_id+"?s=220/>");
+  $('#profile .avatar').html("<img src=" + user.avatar_url + "width=220 height=220 />");
 }
 
 function noSuchUser(username) {
